@@ -25,6 +25,12 @@
       <scope>test</scope>
     </dependency>
     <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.1.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-simple</artifactId>
       <version>1.7.29</version>
@@ -35,21 +41,15 @@
       <version>1.0.3</version>
     </dependency>
     <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.1.0</version>
+      <groupId>org.reactivestreams</groupId>
+      <artifactId>reactive-streams-tck</artifactId>
+      <version>1.0.3</version>
       <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>io.vlingo</groupId>
-      <artifactId>vlingo-streams-core</artifactId>
+      <artifactId>vlingo-streams</artifactId>
       <version>1.0.0</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.reactivestreams</groupId>
-      <artifactId>reactive-streams-tck</artifactId>
-      <version>1.0.3</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
@@ -60,9 +60,6 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.21.0</version>
         <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
           <systemPropertyVariables>
             <propertyName>firefox</propertyName>
           </systemPropertyVariables>
