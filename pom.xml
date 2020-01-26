@@ -1,16 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.vlingo</groupId>
   <artifactId>vlingo-streams-tck</artifactId>
   <version>1.0.0</version>
   <name>vlingo-streams-tck</name>
-  <description>Tests for Reactive Streams TCK against vlingo-streams-core.</description>
+  <description>Tests for Reactive Streams TCK against vlingo-streams.</description>
   <url>https://github.com/vlingo/vlingo-streams</url>
   <licenses>
     <license>
       <name>Mozilla Public License 2.0</name>
       <url>https://mozilla.org/MPL/2.0/</url>
-      </license>
+    </license>
   </licenses>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
