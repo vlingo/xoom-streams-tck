@@ -19,7 +19,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import io.vlingo.actors.World;
-import io.vlingo.common.Completes;
 
 public class StreamProcessorCompatibilityTest extends IdentityProcessorVerification<Integer> {
 
@@ -45,7 +44,7 @@ public class StreamProcessorCompatibilityTest extends IdentityProcessorVerificat
   @Override
   @SuppressWarnings("unchecked")
   public Processor<Integer, Integer> createIdentityProcessor(int bufferSize) {
-    Transformer<Integer, Integer> transformer = Completes::withSuccess;
+    final Operator<Integer, Integer> transformer = Operator.filterWith(value -> true);
     return world.actorFor(Processor.class, StreamProcessor.class, transformer, bufferSize,
             PublisherConfiguration.defaultDropHead());
   }
