@@ -5,7 +5,7 @@
 // was not distributed with this file, You can obtain
 // one at https://mozilla.org/MPL/2.0/.
 
-package io.vlingo.reactivestreams;
+package io.vlingo.xoom.reactivestreams;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -18,7 +18,7 @@ import org.reactivestreams.tck.TestEnvironment;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import io.vlingo.actors.World;
+import io.vlingo.xoom.actors.World;
 
 public class StreamProcessorCompatibilityTest extends IdentityProcessorVerification<Integer> {
 

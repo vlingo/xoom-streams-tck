@@ -43,4 +43,4 @@ jobs:
           SLACK_FOOTER: '${{ github.repository }}'
 
       - name: Cleanup
-        run: rm -rf ~/.m2/repository/io/vlingo
+        run: rm -rf ~/.m2/repository/io/vlingo/xoom

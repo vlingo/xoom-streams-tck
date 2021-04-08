@@ -5,9 +5,9 @@
 // was not distributed with this file, You can obtain
 // one at https://mozilla.org/MPL/2.0/.
 
-package io.vlingo.reactivestreams;
+package io.vlingo.xoom.reactivestreams;
 
-import static io.vlingo.reactivestreams.Source.orElseMaximum;
+import static io.vlingo.xoom.reactivestreams.Source.orElseMaximum;
 
 import org.reactivestreams.Publisher;
 import org.reactivestreams.Subscriber;
@@ -16,9 +16,9 @@ import org.reactivestreams.tck.TestEnvironment;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import io.vlingo.actors.Definition;
-import io.vlingo.actors.World;
-import io.vlingo.reactivestreams.Streams.OverflowPolicy;
+import io.vlingo.xoom.actors.Definition;
+import io.vlingo.xoom.actors.World;
+import io.vlingo.xoom.reactivestreams.Streams.OverflowPolicy;
 
 public class StreamPublisherCompatibilityTest extends PublisherVerification<Long> {
   private World world;
