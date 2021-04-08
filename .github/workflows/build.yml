@@ -27,7 +27,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2-repository
 
       - name: Build with Maven
-        run: mvn --batch-mode --update-snapshots install
+        run: mvn --batch-mode --update-snapshots -Pgithub-releases install
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
